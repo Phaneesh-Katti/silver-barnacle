@@ -1,7 +1,7 @@
 # silver-barnacle
 ### Caesar Cipher Decryption Tool
-
-
+<br>
+<br>
 ## Table of Contents
 
 - [Description](#description)
@@ -73,17 +73,17 @@ python caesar_cipher_cli.py
   <img src="screenshots/gui-screenshot-window.png" alt="GUI Window" width="400">
   <p><em>GUI Window</em></p>
 </div>
-
+<br><br>
 <div align="center">
   <img src="screenshots/gui-screenshot-info.png" alt="General info" width="400">
   <p><em>General info</em></p>
 </div>
-
+<br><br>
 <div align="center">
   <img src="screenshots/gui-screenshot-decrypt.png" alt="Automatic Decryption Top Results" width="400">
   <p><em>Automatic Decryption Top Results</em></p>
 </div>
-
+<br><br>
 <div align="center">
   <img src="screenshots/gui-screenshot-all-combos.png" alt="View All Decrypted Combinations" width="400">
   <p><em>View All Decrypted Combinations</em></p>
