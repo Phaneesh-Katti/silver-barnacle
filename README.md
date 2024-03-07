@@ -66,3 +66,14 @@ python caesar_cipher_cli.py
 ```
 
 ## Screenshots
+![GUI Screenshot 1](screenshots/gui-screenshot-window.png)
+*GUI Window*
+
+![GUI Screenshot 2](screenshots/gui-screenshot-info.png)
+*General info*
+
+![GUI Screenshot 3](screenshots/gui-screenshot-decrypt.png)
+*Automatic Decryption Top Results*
+
+![GUI Screenshot 4](screenshots/gui-screenshot-all-combos.png)
+*View All Decrypted Combinations*
