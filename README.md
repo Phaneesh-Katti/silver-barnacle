@@ -1,7 +1,6 @@
 # silver-barnacle
 ## Automated Caesar-Cipher Decryption Tool
 <br>
-<br>
 
 ## Table of Contents
 
