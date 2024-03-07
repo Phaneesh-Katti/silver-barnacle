@@ -63,3 +63,6 @@ Run the CLI tool by executing the following command:
 
 ```bash
 python caesar_cipher_cli.py
+```
+
+## Screenshots
