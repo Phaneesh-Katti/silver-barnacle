@@ -1,9 +1,5 @@
 # silver-barnacle
-Automated Caesar Cipher Decryptor
-
-# Caesar Cipher Decryption Tool
-
-![Caesar Cipher Decryption Tool Logo](link_to_your_logo_or_screenshot)
+## Caesar Cipher Decryption Tool
 
 ## Table of Contents
 
