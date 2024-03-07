@@ -5,6 +5,26 @@ from nltk.corpus import words
 from nltk.corpus import wordnet
 common_words = set(words.words())
 
+"""
+    This class definition creates a GUI for decrypting Caesar Cipher encrypted text. Here's what each method does:
+
+    __init__: Initializes the GUI and calls the init_ui method to set up the user interface.
+    init_ui: Sets up the layout and UI elements for the GUI, including labels, text entry, buttons, and their respective actions.
+    decrypt: Retrieves the input text, strips any whitespace, and calls the get_top_guesses method to decrypt the input.
+    show_shifted_strings: Retrieves the input text, strips any whitespace, and calls the print_shifted_strings method to display all 26 shifted strings.
+    clear_input: Clears the input text and result label.
+    show_info: Displays information about how the tool works and provides notes on its usage.
+    perc_num_words: Calculates the percentage of recognized English words in the decrypted text.
+    shifter: Shifts the input string using a given key to decrypt the text.
+    num_common_words: Returns a list of tuples containing words from the input text and a boolean indicating if the word is a common English word.
+    get_word_meaning: Retrieves the definition of a given word using WordNet.
+    get_top_guesses: Finds the top 3 decrypted guesses and calls the print_top_guesses method to display the results.
+    print_top_guesses: Formats and displays the top 3 decrypted guesses along with their confidence levels and meanings.
+    get_meanings: Retrieves the meanings of common English words in the decrypted text using the get_word_meaning method.
+    print_shifted_strings: Generates all 26 shifted strings for the input text and calls the show_shifted_strings_popup method to display them.
+    show_shifted_strings_popup: Displays the shifted strings in a popup window.
+"""
+
 class CaesarCipherGUI(QWidget):
     def __init__(self):
         super().__init__()
@@ -183,27 +203,7 @@ class CaesarCipherGUI(QWidget):
         popup.setLayout(layout)
 
         popup.exec_()
-    # def show_shifted_strings_popup(self, shifted_strings):
-    #     popup = QWidget()
-    #     popup.setWindowTitle("Shifted Strings")
-    #     popup.setGeometry(200, 200, 600, 400)
 
-    #     scroll_area = QScrollArea()
-    #     scroll_area.setWidgetResizable(True)
-
-    #     scroll_content = QTextBrowser()
-    #     scroll_content.setFont(QFont('Arial', 10))
-
-    #     for shifted_string in shifted_strings:
-    #         scroll_content.append(shifted_string)
-
-    #     scroll_area.setWidget(scroll_content)
-
-    #     layout = QVBoxLayout(popup)
-    #     layout.addWidget(scroll_area)
-    #     popup.setLayout(layout)
-
-    #     popup.show()
 
 
 if __name__ == '__main__':
