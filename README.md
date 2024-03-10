@@ -25,7 +25,7 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
 
 ## Installation
 
-### CLI Version
+
 
 1. Clone the repository:
 
@@ -33,7 +33,7 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
     git clone https://github.com/Phaneesh-Katti/silver-barnacle.git
     cd silver-barnacle
     ```
-
+### CLI Version
 2. Install the required dependencies:
 
     ```bash
@@ -41,13 +41,6 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
     ```
 
 ### GUI Version
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/your-username/caesar-cipher-tool.git
-    cd caesar-cipher-tool
-    ```
 
 2. Install the required dependencies:
 
