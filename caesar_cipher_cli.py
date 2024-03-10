@@ -77,14 +77,14 @@ words_info1, words_info2, words_info3 = [], [], []  # Declare these variables gl
 
 def get_top_guesses():
     """
-    Finds the top 3 decryptions of the ciphertext based on the number of common words.
+    Finds the top decryptions of the ciphertext based on the number of common words.
 
     For each possible key (0-25), shifts the ciphertext by that key and calculates the
     percentage of common words in the resulting decryption. If the percentage is greater
     than the threshold for the lowest ranked decryption, the decryption is added to the list
     of top guesses.
 
-    The top 3 decryptions are stored in the global variables t1, t2, and t3, along with their
+    The top decryptions are stored in the global variables t1, t2, and t3, along with their
     respective keys (k1, k2, k3) and word information (words_info1, words_info2, words_info3).
     """
     global t1, t2, t3, s1, s2, s3, k1, k2, k3, words_info1, words_info2, words_info3
@@ -117,14 +117,14 @@ def print_meanings(words_info, key):
 
 def print_top_guesses():
     """
-    Prints the top 3 guesses for the ciphertext, along with their keys, plain texts,
+    Prints the top guesses for the ciphertext, along with their keys, plain texts,
     and corresponding confidence percentages.
 
     If there are no valid decryptions, prints a message indicating this.
     """
     
     global t1, t2, t3, s1, s2, s3, k1, k2, k3, words_info1, words_info2, words_info3
-    print("Top 3 guesses:")
+    print("top guesses:")
     if any((t1, t2, t3)):  # If there are valid decryptions
         print("{:<5} {:<15} {:<10}".format("Key", "Plain Text", "Confidence"))
         if t1:  # If there is a top 1 guess
@@ -133,7 +133,7 @@ def print_top_guesses():
         if t2:  # If there is a top 2 guess
             print("{:<5} {:<15} {:<10}".format(k2, s2, t2))
             print_meanings(words_info2, k2)
-        if t3:  # If there is a top 3 guess
+        if t3:  # If there is a top guess
             print("{:<5} {:<15} {:<10}".format(k3, s3, t3))
             print_meanings(words_info3, k3)
     else:  # If there are no valid decryptions
@@ -167,7 +167,7 @@ if __name__ == "__main__":
         get_top_guesses()
         print_top_guesses()
 
-        user_input = input("Are you satisfied with the top 3 guesses? (y/n): ").lower()
+        user_input = input("Are you satisfied with the top guesses? (y/n): ").lower()
         if user_input == 'n':
             print_shifted_strings()
 
