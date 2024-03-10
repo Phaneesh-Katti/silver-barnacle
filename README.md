@@ -30,7 +30,7 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/caesar-cipher-tool.git
+    git clone https://github.com/Phaneesh-Katti/silver-barnacle.git
     cd caesar-cipher-tool
     ```
 
