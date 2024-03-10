@@ -18,8 +18,8 @@ common_words = set(words.words())
     shifter: Shifts the input string using a given key to decrypt the text.
     num_common_words: Returns a list of tuples containing words from the input text and a boolean indicating if the word is a common English word.
     get_word_meaning: Retrieves the definition of a given word using WordNet.
-    get_top_guesses: Finds the top 3 decrypted guesses and calls the print_top_guesses method to display the results.
-    print_top_guesses: Formats and displays the top 3 decrypted guesses along with their confidence levels and meanings.
+    get_top_guesses: Finds the top decrypted guesses and calls the print_top_guesses method to display the results.
+    print_top_guesses: Formats and displays the top decrypted guesses along with their confidence levels and meanings.
     get_meanings: Retrieves the meanings of common English words in the decrypted text using the get_word_meaning method.
     print_shifted_strings: Generates all 26 shifted strings for the input text and calls the show_shifted_strings_popup method to display them.
     show_shifted_strings_popup: Displays the shifted strings in a popup window.
@@ -95,7 +95,7 @@ class CaesarCipherGUI(QWidget):
             "This tool attempts to decrypt a Caesar Cipher encrypted text.\n\n"
             "How it works:\n"
             "1. Enter your encrypted text in the provided text box.\n"
-            "2. Click 'Decrypt' to view the top 3 guesses based on English word recognition.\n"
+            "2. Click 'Decrypt' to view the top guesses based on English word recognition.\n"
             "3. Click 'Show All 26 Combinations' to see the shifted strings for all keys.\n\n"
             "Note:\n"
             "- This tool may not work well for very short input or texts with uncommon words.\n"
@@ -151,7 +151,7 @@ class CaesarCipherGUI(QWidget):
         self.print_top_guesses()
 
     def print_top_guesses(self):
-        result = "Top 3 guesses:\n"
+        result = "top guesses:\n"
         if any((self.top_guesses['t1'], self.top_guesses['t2'], self.top_guesses['t3'])):
             result += "{:<5} {:<15} {:<10}\n".format("Key", "Plain Text", "Confidence")
             if self.top_guesses['t1']:
