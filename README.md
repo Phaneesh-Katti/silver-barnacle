@@ -33,30 +33,24 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
     git clone https://github.com/Phaneesh-Katti/silver-barnacle.git
     cd silver-barnacle
     ```
-### CLI Version
-2. Install the required dependencies:
-
-    ```bash
-    pip install -r requirements_cli.txt
-    ```
-
-### GUI Version
 
 2. Install the required dependencies:
 
     ```bash
     pip install -r requirements_gui.txt
     ```
+3. Download 'words' and 'wordnet' from nltk:
+
+    ```bash
+    python
+    import nltk
+    nltk.download('words')
+    nltk.download('wordnet')
+    ```
+    
 
 ## Usage
 
-### CLI Version
-
-Run the CLI tool by executing the following command:
-
-```bash
-python caesar_cipher_cli.py
-```
 
 ## Screenshots
 
