@@ -61,6 +61,9 @@ python caesar_cipher_cli.py
 ## Screenshots
 
 ### GUI Version
+```bash
+python caesar_cipher_gui.py
+```
 
 <div align="center">
   <img src="screenshots/gui-screenshot-window.png" alt="GUI Window" width="400">
