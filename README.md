@@ -43,11 +43,16 @@ The Caesar Cipher Decryption Tool is a Python-based utility that helps decrypt t
 
     ```bash
     python
+    ```
+    ```bash
     import nltk
+    ```
+    ```bash
     nltk.download('words')
+    ```
+    ```bash
     nltk.download('wordnet')
     ```
-    
 
 ## Usage
 
